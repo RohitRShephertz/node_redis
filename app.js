@@ -10,7 +10,7 @@ var http = require('http');
 var path = require('path');
 
 var redis = require("redis"),
-client = redis.createClient(19284,"172.16.2.167",{no_ready_check: true});
+client = redis.createClient(62535,"172.16.2.167",{no_ready_check: true});
 // client = redis.createClient(<VM PORT>,"VM IP",{no_ready_check: true});
 
 client.auth("anxmsbfcm7125qda8w79k16bfrjyk701", function() {
